@@ -1,0 +1,526 @@
+
+
+
+
+
+
+
+
+*{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;     
+  } 
+  body{
+    background: rgb(11, 11, 41);
+  }
+  
+  
+  
+  .video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .contacts{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 17%;
+    
+    
+  }
+  .gmail{
+    text-align: center;
+  }
+  
+  h5{
+    font-size: large;
+    color: white;
+  }
+  .nothing{
+    color: white;
+    
+    font-style: italic;
+  }
+  button{
+    background: none;
+    color:white ;
+    border-radius: 15px;
+  
+    
+    
+    height: 50px;
+    width: 150px;
+  }
+  nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  nav .logo{
+    font-style: italic;
+    color: rgb(67, 67, 151);
+    font-size: 35px;
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: #fff;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+  
+    
+  }
+  .tittle{
+    text-align: center;
+  
+  }
+  .subtittle{
+    text-align: center;
+  }
+  table, tr, th, td, caption {
+    border: 1px solid white;
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    
+  }
+  table{
+    background-color: rgb(18, 19, 18);
+    width: 100%;
+  }
+  .lorem{
+    
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 5%;
+    color: white;
+  }
+  .subsub{
+    text-align: left;
+  }
+  th{
+    color: rgb(67, 67, 151);
+    font-weight: bolder;
+    font-size: larger;
+  }
+  td{
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  .hsper{
+    color:rgb(88, 76, 88);
+    height: 10px;
+    width: 95%;
+    background-color:rgb(51, 51, 224);
+  }
+  .content div{
+    
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .namecenter{
+    padding-top: 15%;
+    text-align: center;
+  }
+  .copydept{
+    text-align: center;
+    color: rgb(210, 214, 230);
+  }
+  footer{
+    background-color: rgb(6, 6, 66);
+  }
+  .copyright{
+  
+    color: rgb(210, 214, 230);
+    text-align: center;
+  }
+  
+      
+  
+  
+  .registernow{
+    padding: 5%;
+    padding-bottom: 6%;
+    background-color: #1b1b1b;
+    color: white;
+    width: 500px;
+    height: 100px;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .regstr{
+    font-size: x-large;
+  }
+  
+  *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  } 
+  body{
+    background: rgb(11, 11, 41);
+    color: white;
+  }
+  h1{
+    text-indent: 1%;
+    color:  rgb(67, 67, 151);
+  }
+  .headerr{
+    
+    
+    height: fit-content;
+  
+    
+  }
+  .address{
+    
+    text-indent: 0%;
+    padding-top: 0%;
+    text-align: right;
+  }
+  .po{
+    font-style: italic;
+    font-weight: 400;
+  }
+  fieldset{
+    border-color: white;
+  }
+  h2{
+    font-style: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 2%;
+    color: rgb(156, 67, 156);
+  }
+  a{
+    text-decoration: none;
+  }
+  .year{
+    color: rgb(190, 81, 190);
+  }
+  
+  .ini{
+    
+    color:  rgb(190, 81, 190);
+  
+  }
+  .pper{
+    color:rgb(88, 76, 88);
+  
+    height: 10px;
+    width: 85%;
+    background-color: rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+  
+  }
+  .cper{
+    color:rgb(88, 76, 88);
+    height: 10px;
+    width: 70%;
+    background-color: rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+  
+  }
+  .cppper{
+    color:rgb(88, 76, 88);
+    height: 10px;
+    width: 75%;
+    background-color: rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+  
+  }
+  .per{
+    color:rgb(88, 76, 88) ;
+  }
+  .jper{
+    color:rgb(88, 76, 88);
+    height: 10px;
+    width: 85%;
+    background-color: rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+    
+  
+  }
+  .rper{
+    color:rgb(88, 76, 88);
+    height: 10px;    
+  
+    width: 80%;
+    background-color: rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+  
+  }
+  
+  
+  .hsper{
+    color:rgb(88, 76, 88);
+    height: 10px;
+    width: 95%;
+    background-color:rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+  }
+  .jsper{
+    color:rgb(88, 76, 88);
+    height: 10px;
+    width: 90%;
+    background-color: rgb(51, 51, 224);
+    text-align: center;
+    
+    
+    border-radius: 15px;
+  
+  }
+  .headerr{
+    font-size: small;
+  }
+  .pp{
+    background-image: url(image/hsc.jpg);
+    
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border: 1px;
+    border-style:dotted;
+    border-color: white;
+  }
+  .btech{
+    
+    background-image: url(image/hsc.jpg);
+  
+    
+  }
+  form{
+    padding: 5%;
+  }
+  label{
+    visibility: hidden;
+  }
+  
+  
+  .name{
+    width: 98%;
+    height: 10vh;
+    border: 0ch;
+    border-radius: 15px;
+    padding-left: 2%;
+    background-color:rgb(93, 40, 139) ;
+    border-color:rgb(32, 14, 48) ;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .email{
+    width: 98%;
+    height: 10vh;
+    border: 0ch;
+    border-radius: 15px;
+    padding-left: 2%;
+    background-color:rgb(93, 40, 139) ;
+    border-color:rgb(32, 14, 48) ;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .message{
+    width: 98%;
+    height: 30vh;
+    border: 0ch;
+    border-radius: 15px;
+    padding: 0%;
+    padding-left: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(93, 40, 139) ;
+    border-color:rgb(32, 14, 48) ;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: 300;
+  }
+  
+  .submit{
+    
+    width: 25vh;
+    height: 8vh;
+    background-color:rgb(170, 10, 58) ;
+    color: rgb(255, 255, 255);;
+    font-size: larger;
+    font-weight: 300;
+    border-color: rgb(32, 14, 48);
+    border-radius: 15px;
+    
+  }
+  .call{
+    width: 80%;
+    height: 8vh;
+    background-color: rgb(38, 38, 100);
+    color: rgb(255, 255, 255);;
+    font-size: larger;
+    font-weight: 300;
+    border-color: rgb(32, 14, 48);
+    border-radius: 15px;
+  }
+  .attach{
+    text-decoration: none;
+    width: 20%;
+    height:6vh ;
+    
+  }
+  .none{
+    visibility: hidden;
+  }
+  
+  
+  
+  
+  .course{
+    font-size: larger;
+    font-weight: 100%;
+    font-style: oblique;
+    
+  }
+  .hsc{
+    
+    background-image: url(image/hsc.jpg);
+  }
+  .sslc{
+    background-image: url(image/hsc.jpg);
+  }
+  h3{
+    text-decoration: none;
+    text-indent: 2%;
+    color: rgb(51, 51, 224);
+  
+  }
+  main p{
+    text-indent: 5%;
+  }
+  .inside{
+    text-indent: 5%;
+  }
+  .headder{
+    
+    background-color: black;
+  }
+  h1{
+    font-style: italic;
+  }
+  
+  
+  
+  
